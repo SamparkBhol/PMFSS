@@ -74,7 +74,35 @@ Detailed documentation is available in the `docs/` folder. You’ll find setup g
 
 ## 🔥 Future Work
 
-I’m planning to integrate additional monitoring tools and improve the model’s accuracy further. Stay tuned!
+Exciting upcoming features are in the pipeline to make this project even more powerful and versatile:
+
+- **🚨 Alert Enhancements (`dashboard/alert_enhancements.py`)**:
+  - Integration with SMS and Slack for real-time alerts.
+  - Dynamic threshold adjustments based on real-time data trends to reduce false positives.
+
+- **🧠 Ensemble Modeling (`models/ensemble_model.py`)**:
+  - Development of an ensemble model combining XGBoost, Random Forest, and LightGBM.
+  - Increased accuracy and robustness in failure predictions, crucial for space station operations.
+
+- **📊 Visualization (`scripts/visualization.py`)**:
+  - Automatic generation of visual insights like feature importance plots, ROC curves, and heatmaps.
+  - Visualizations will be saved as images, making it easier to analyze and present results.
+
+- **📄 Report Generation (`scripts/report_generator.py`)**:
+  - Automated PDF reports summarizing model performance, metrics, and system logs after each prediction cycle.
+  - Comprehensive reports will help in tracking system health over time and making informed decisions.
+
+- **🔄 Data Augmentation (`data/augmentation.py`)**:
+  - Generation of synthetic data to improve model training, especially in scenarios with limited data.
+  - Enhanced generalization capabilities of the model, reducing overfitting and improving prediction accuracy.
+
+### **User Contributions**:
+- You can further improve the system by exploring additional alert mechanisms like email notifications.
+- Experiment with different models in the ensemble to see which combination yields the best results.
+- Add more visualization types to gain deeper insights into model performance.
+- Customize the report templates to include additional metrics or visualizations specific to your needs.
+- Implement other data augmentation techniques like rotation, flipping, or scaling for different types of data.
+
 
 ## 📫 Contact
 
