@@ -70,7 +70,7 @@ Make sure you’ve installed all the dependencies listed in `requirements.txt`. 
 
 ## 📝 Documentation
 
-Detailed documentation is available in the `docs/` folder. You’ll find setup guides, architecture diagrams, and more.
+Detailed documentation is available in the `docs/` folder. You’ll find setup guides, and more.
 
 ## 🔥 Future Work
 
