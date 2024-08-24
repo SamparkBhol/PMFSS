@@ -1,0 +1,62 @@
+# deployment.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: predictive-maintenance-model
+  labels:
+    app: predictive-maintenance
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: predictive-maintenance
+  template:
+    metadata:
+      labels:
+        app: predictive-maintenance
+    spec:
+      containers:
+      - name: model-server
+        image: myregistry/predictive-maintenance-model:latest
+        ports:
+        - containerPort: 5000
+        env:
+        - name: MODEL_PATH
+          value: /mnt/models/xgboost_model.joblib
+        volumeMounts:
+        - name: model-volume
+          mountPath: /mnt/models
+      volumes:
+      - name: model-volume
+        persistentVolumeClaim:
+          claimName: model-pvc
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: predictive-maintenance-service
+spec:
+  selector:
+    app: predictive-maintenance
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+  type: LoadBalancer
+
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: model-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+

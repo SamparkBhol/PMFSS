@@ -1,0 +1,93 @@
+# config.yaml
+
+# Kubeflow Pipeline Configuration
+kubeflow:
+  pipeline_name: "space_station_maintenance_pipeline"
+  namespace: "kubeflow"
+  experiment_name: "space_station_maintenance_experiment"
+  run_name: "space_station_maintenance_run"
+  bucket_name: "space-station-bucket"
+  data_volume: "10Gi"
+  image: "gcr.io/your-project-id/space-station-maintenance:latest"
+  components:
+    - name: "data_preprocessing"
+      image: "gcr.io/your-project-id/data-preprocessing:latest"
+    - name: "model_training"
+      image: "gcr.io/your-project-id/model-training:latest"
+    - name: "model_evaluation"
+      image: "gcr.io/your-project-id/model-evaluation:latest"
+    - name: "model_deployment"
+      image: "gcr.io/your-project-id/model-deployment:latest"
+
+# XGBoost Model Configuration
+xgboost:
+  n_estimators: 500
+  learning_rate: 0.05
+  max_depth: 6
+  subsample: 0.8
+  colsample_bytree: 0.8
+  random_state: 42
+  objective: "binary:logistic"
+  eval_metric: "logloss"
+  early_stopping_rounds: 10
+  validation_split: 0.2
+
+# H2O.ai Configuration
+h2o:
+  cloud_size: 3
+  max_mem_size: "6G"
+  nthreads: -1
+  min_mem_size: "2G"
+  enable_gpus: true
+  scaleup_timeout_seconds: 1200
+  log_level: "INFO"
+  checkpoint_dir: "/tmp/h2o_checkpoint"
+
+# Data Paths
+data:
+  raw_data_path: "data/raw/space_station_data.csv"
+  processed_data_path: "data/processed/space_station_data_processed.csv"
+  simulation_data_path: "data/simulation/space_station_simulated.csv"
+
+# Gradio Dashboard Configuration
+gradio:
+  interface_title: "Space Station Predictive Maintenance Dashboard"
+  input_file_path: "data/simulation/space_station_simulated.csv"
+  alert_threshold: 0.8
+  port: 7860
+  live: true
+
+# Logging Configuration
+logging:
+  version: 1
+  formatters:
+    simple:
+      format: "[%(asctime)s] %(levelname)s - %(message)s"
+  handlers:
+    console:
+      class: logging.StreamHandler
+      formatter: simple
+      level: DEBUG
+    file:
+      class: logging.FileHandler
+      filename: "logs/maintenance.log"
+      formatter: simple
+      level: INFO
+  loggers:
+    main:
+      level: DEBUG
+      handlers: [console, file]
+      propagate: no
+
+# Email Notifications Configuration
+email_notifications:
+  enabled: true
+  smtp_server: "smtp.gmail.com"
+  port: 587
+  sender_email: "your_email@example.com"
+  recipient_email: "operator@example.com"
+  subject: "Space Station Maintenance Alert"
+  body: "Attention: The predictive maintenance system has detected potential equipment failure. Please check the Gradio dashboard for details."
+  auth:
+    username: "your_email@example.com"
+    password: "your_password"
