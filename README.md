@@ -25,7 +25,7 @@ Here’s a quick overview of how everything is organized:
 - **scripts/**: Data preprocessing, feature importance, and other utility scripts.
 - **notebooks/**: Jupyter notebooks for exploratory data analysis (EDA) and model training.
 - **tests/**: Unit and integration tests to ensure the system works flawlessly.
-- **docs/**: Documentation files, including setup guides and architecture diagrams.
+- **docs/**: Documentation files, includes setup files
 - **README.md**: This file, explaining what the project is all about.
 - **requirements.txt**: A list of dependencies to get everything up and running.
 
