@@ -107,7 +107,7 @@ Exciting features that I will integrate in future to make the project more robus
   - Capable of answering user queries, offering troubleshooting tips, and providing information on system status.
   - Uses natural language processing (NLP) to understand and respond to user questions, making the system more user-friendly and accessible.
 
-            #### **User Contributions**:
+           **User Contributions:**
             - You can further improve the system by exploring additional alert mechanisms like email notifications.
             - Experiment with different models in the ensemble to see which combination yields the best results.
             - Add more visualization types to gain deeper insights into model performance.
