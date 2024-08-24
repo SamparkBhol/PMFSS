@@ -37,6 +37,8 @@ Here’s a quick overview of how everything is organized:
 4. **Real-Time Monitoring**: The Gradio dashboard allows operators to monitor system health in real-time.
 5. **Alerts**: If a potential failure is detected, an alert is triggered, giving operators time to take action.
 
+       **AS AN INPUT YOU HAVE TO GIVE RAW,PROCESSED AND SIMULATION DATA**
+
 ## 🤖 Why This Project Is Cool
 
 - **Space-Ready**: Designed with the unique challenges of space environments in mind.
