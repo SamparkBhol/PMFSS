@@ -29,7 +29,7 @@ Here’s a quick overview of how everything is organized:
 - **README.md**: This file, explaining what the project is all about.
 - **requirements.txt**: A list of dependencies to get everything up and running.
 
-## 🚀 How It Works
+## 🤔 How It Works
 
 1. **Data Ingestion**: First, I preprocess the data, cleaning it and preparing it for modeling.
 2. **Model Training**: The XGBoost model is trained on historical data to predict potential failures.
@@ -39,7 +39,7 @@ Here’s a quick overview of how everything is organized:
 
        **AS AN INPUT YOU HAVE TO GIVE RAW,PROCESSED AND SIMULATION DATA**
 
-## 🤖 Why This Project Is Cool
+## 🌟 Why This Project Is Cool
 
 - **Space-Ready**: Designed with the unique challenges of space environments in mind.
 - **Scalable**: The use of Kubeflow and H2O.ai ensures that the system can handle large-scale data in real-time.
@@ -115,4 +115,4 @@ Exciting features that I will integrate in future to make the project more robus
 
 Feel free to reach out if you have any questions or suggestions. I’d love to hear from you!
 
-Enjoy exploring the project! 🚀
+Enjoy exploring the project! 
