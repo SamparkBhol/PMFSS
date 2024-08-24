@@ -107,13 +107,13 @@ Exciting features that I will integrate in future to make the project more robus
   - Capable of answering user queries, offering troubleshooting tips, and providing information on system status.
   - Uses natural language processing (NLP) to understand and respond to user questions, making the system more user-friendly and accessible.
 
-           **User Contributions:**
-            - You can further improve the system by exploring additional alert mechanisms like email notifications.
-            - Experiment with different models in the ensemble to see which combination yields the best results.
-            - Add more visualization types to gain deeper insights into model performance.
-            - Customize the report templates to include additional metrics or visualizations specific to your needs.
-            - Implement other data augmentation techniques like rotation, flipping, or scaling for different types of data.
-
+#### **User Contributions**:
+- You can further improve the system by exploring additional alert mechanisms like email notifications.
+- Experiment with different models in the ensemble to see which combination yields the best results.
+- Add more visualization types to gain deeper insights into model performance.
+- Customize the report templates to include additional metrics or visualizations specific to your needs.
+- Implement other data augmentation techniques like rotation, flipping, or scaling for different types of data.
+- Enhance the helping bot with more advanced NLP capabilities or integrate it with other communication channels.
 
 ## 📫 Contact
 
