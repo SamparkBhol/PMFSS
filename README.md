@@ -76,7 +76,7 @@ Detailed documentation is available in the `docs/` folder. You’ll find setup g
 
 ## 🔥 Future Work
 
-Exciting upcoming features are in the pipeline to make this project even more powerful and versatile:
+Exciting features that I will integrate in future to make the project more robust and versatile:
 
 - **🚨 Alert Enhancements (`dashboard/alert_enhancements.py`)**:
   - Integration with SMS and Slack for real-time alerts.
