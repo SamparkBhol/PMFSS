@@ -97,6 +97,11 @@ Exciting features that I will integrate in future to make the project more robus
 - **🔄 Data Augmentation (`data/augmentation.py`)**:
   - Generation of synthetic data to improve model training, especially in scenarios with limited data.
   - Enhanced generalization capabilities of the model, reducing overfitting and improving prediction accuracy.
+    
+- **🤖 Helping Bot (`scripts/helping_bot.py`)**:
+  - A virtual assistant integrated into the Gradio dashboard to provide real-time support and guidance.
+  - Capable of answering user queries, offering troubleshooting tips, and providing information on system status.
+  - Uses natural language processing (NLP) to understand and respond to user questions, making the system more user-friendly and accessible.
 
 ### **User Contributions**:
 - You can further improve the system by exploring additional alert mechanisms like email notifications.
